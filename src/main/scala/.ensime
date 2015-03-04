@@ -1,0 +1,40 @@
+;; If your project contains a lot of files, it is advisable to enable (:disable-source-load-on-startup t)
+;; Otherwise Ensime might incur a massive lag at startup time
+;; See more information about that at http://aemoncannon.github.com/ensime/index.html
+
+(
+  :subprojects (
+    (
+      :name "scala"
+      :module-name "scala"
+      :depends-on-modules (
+      
+      )
+      :package "default"
+      :version "0.1-SNAPSHOT"
+      :compile-deps (
+        "/home/wang/.sbt/boot/scala-2.10.4/lib/scala-library.jar"
+      )
+      :runtime-deps (
+        "/home/wang/.sbt/boot/scala-2.10.4/lib/scala-library.jar"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/classes"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/classes"
+      )
+      :test-deps (
+        "/home/wang/.sbt/boot/scala-2.10.4/lib/scala-library.jar"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/classes"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/test-classes"
+      )
+      :source-roots (
+        "/home/wang/workspace/1024searcher/src/main/scala/src/main/scala"
+        "/home/wang/workspace/1024searcher/src/main/scala/src/main/java"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/src_managed/main"
+        "/home/wang/workspace/1024searcher/src/main/scala/src/test/scala"
+        "/home/wang/workspace/1024searcher/src/main/scala/src/test/java"
+        "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/src_managed/test"
+      )
+      :target "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/classes"
+      :test-target "/home/wang/workspace/1024searcher/src/main/scala/target/scala-2.10/test-classes"
+    )
+  )
+)

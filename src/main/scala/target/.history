@@ -1,0 +1,14 @@
+ensime
+ensime generater
+ensime generate
+exit
+:q
+exit
+console
+import akka.io._
+console
+:q
+exit
+compile
+:q
+exit
