@@ -29,9 +29,8 @@ class TcpHandler extends Actor {
 	def receive = {
 		case Received(data) =>{
 			val reqparser =	context.actorOf(Props[ReqParser])
-			println(s"fromTCPServer${data.utf8String}") 
+//			println(s"fromTCPServer${data.utf8String}") 
 			val rez =Await.result(reqparser?(data.utf8String), 20 seconds).asInstanceOf[String] 
-			println(s"FROMSERVER ${rez}")
 			sender()!Write(ByteString(rez+'\n'))
 		}
 		case PeerClosed     => context stop self

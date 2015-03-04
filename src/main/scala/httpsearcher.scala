@@ -28,7 +28,7 @@ class HttpSearcher extends Actor{
 					val proxy:Proxy = new Proxy(Proxy.Type.SOCKS, add)
 					val conn:URLConnection = url.openConnection(proxy)
 					val input:InputStream = conn.getInputStream()
-					val rder:InputStreamReader = new InputStreamReader(input, "gb2312")
+					val rder:InputStreamReader = new InputStreamReader(input, "GBK")
 					val rd:BufferedReader = new BufferedReader(rder)
 					var buf = ""
 					var content = ""
@@ -38,13 +38,14 @@ class HttpSearcher extends Actor{
 						content=content+buf
 					}
 					doc = Jsoup.parse(content)
+					//print(doc)
 				}
 				val tokenlist=doc.body.getElementsByTag("a").iterator.asScala.toList.map(_.toString).filter(in => (in.contains("htm_data") && (!in.contains("title")))).map(_.split("\""))
 				val bigmap = tokenlist.map(_(1)).zip(tokenlist.map(_(6))).toMap.map(_.swap)
 				val keylist = bigmap.keys.filter(_.contains(keyword.trim))
-				sender!(keylist.map(bigmap(_)).toString)
-				println("FROMHTTPSEARCHER")
-				println(keylist.map(bigmap(_)).toString)
+				sender!(keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
+//				println("FROMHTTPSEARCHER")
+//				println(keylist.map(bigmap(_)).toString)
 			}
 			catch{
 				case e:IOException => println(e)
