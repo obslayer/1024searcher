@@ -18,7 +18,7 @@ class Server extends Actor{
 		}
 		case CommandFailed(_:Bind) => context stop self
 		case c @ Connected(remote, local)=>
-		val handler = context.actorOf(Props[TcpHandler])
+		val handler = context.actorOf(Props[TcpHandler],"handler")
 		val connection = sender()
 		connection ! Register(handler)
 	}
@@ -30,8 +30,14 @@ class TcpHandler extends Actor {
 		case Received(data) =>{
 			val reqparser =	context.actorOf(Props[ReqParser])
 //			println(s"fromTCPServer${data.utf8String}") 
-			val rez =Await.result(reqparser?(data.utf8String), 20 seconds).asInstanceOf[String] 
-			sender()!Write(ByteString(rez+'\n'))
+			//val rez =Await.result(reqparser?(data.utf8String), 20 seconds).asInstanceOf[String] 
+			reqparser!(data.utf8String)
+			//sender()!Write(ByteString(rez+'\n'))
+			println(sender.path.toString)
+		}			
+		case str:String =>{
+			//println(str)
+			context.actorSelection("akka://1024/system/IO-TCP/selectors/$a/1")!Write(ByteString(str+'\n'))
 		}
 		case PeerClosed     => context stop self
 	}
