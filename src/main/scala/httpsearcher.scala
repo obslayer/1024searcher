@@ -12,19 +12,23 @@ import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
+import akka.io.{IO, Tcp}
 import org.jsoup._;
+import Tcp._
+import akka.util.ByteString
 import org.jsoup.nodes.Document;
 import scala.collection.JavaConverters._;
 class HttpSearcher extends Actor{
 	def receive ={
 		case SearchPara(mode, page, keyword)=>{
-			println(s"fromHTTPSearcher page ${page} ${keyword}")
 			try{
 				val fromURL= true
 				val useProxy =true
-				var doc = Jsoup.parse(new File("/home/wang/workspace/1024searcher/page.html"), "UTF-8")
+				var doc:Document= new Document("")
+				if (!fromURL){doc = Jsoup.parse(new File("/home/wang/workplace/1024searcher/page.html"), "UTF-8")}
 				if(fromURL){
 					val url:URL = new URL("http://c1521.biz.tm/thread0806.php?fid=2&search=&page=${page}")
+					println(s"searching http://c1521.biz.tm/thread0806.php?fid=2&search=&page=${page}")
 					val add:InetSocketAddress = new InetSocketAddress("127.0.0.1", 1080)
 					val proxy:Proxy = new Proxy(Proxy.Type.SOCKS, add)
 					var conn:URLConnection = url.openConnection()
@@ -48,7 +52,7 @@ class HttpSearcher extends Actor{
 				//println(keylist.last)
 				//sender!(keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
 				val res = (keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
-				context.actorSelection("akka://1024/user/tcpserver/handler")!
+				context.actorSelection("akka://1024/system/IO-TCP/selectors/$a/1")!Write(ByteString(res))
 				println(res)
 //				println("FROMHTTPSEARCHER")
 //				println(keylist.map(bigmap(_)).toString)
