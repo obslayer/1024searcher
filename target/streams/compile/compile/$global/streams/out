@@ -1,75 +1,29 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala, /home/wang/workplace/1024searcher/src/main/scala/server.scala, /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala, /home/wang/workplace/1024searcher/src/main/scala/main.scala, /home/wang/workplace/1024searcher/src/main/scala/paratable.scala)[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala)[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala, /home/wang/workplace/1024searcher/src/main/scala/server.scala, /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala, /home/wang/workplace/1024searcher/src/main/scala/main.scala, /home/wang/workplace/1024searcher/src/main/scala/paratable.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala, /home/wang/workplace/1024searcher/src/main/scala/server.scala, /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala, /home/wang/workplace/1024searcher/src/main/scala/main.scala, /home/wang/workplace/1024searcher/src/main/scala/paratable.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 5 sources: invalidated sources (5) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 5 Scala sources to /home/wang/workplace/1024searcher/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/wang/workplace/1024searcher/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1a33ec0f, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1adb4311, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-target:jvm-1.7[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/resources.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/sunrsasign.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/jsse.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/jce.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/charsets.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/jfr.jar:/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/classes:/home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/wang/workplace/1024searcher/target/scala-2.10/classes:/home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar:/home/wang/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/wang/.ivy2/cache/net.debasishg/redisclient_2.10/jars/redisclient_2.10-2.13.jar:/home/wang/.ivy2/cache/commons-pool/commons-pool/jars/commons-pool-1.6.jar:/home/wang/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.2.jar:/home/wang/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.1.jar:/home/wang/.ivy2/cache/com.github.scopt/scopt_2.10/jars/scopt_2.10-3.3.0.jar[0m
-[0m[[33mwarn[0m] [0mthere were 3 feature warning(s); re-run with -feature for details[0m
-[0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 2.782109152 s[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, timeout, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mThe following member ref dependencies of /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala are invalidated:[0m
-[0m[[0mdebug[0m] [0m	/home/wang/workplace/1024searcher/src/main/scala/server.scala[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mThe following member ref dependencies of /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala are invalidated:[0m
-[0m[[0mdebug[0m] [0m	/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/wang/workplace/1024searcher/src/main/scala/paratable.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/wang/workplace/1024searcher/src/main/scala/paratable.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/wang/workplace/1024searcher/src/main/scala/paratable.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/wang/workplace/1024searcher/src/main/scala/paratable.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/wang/workplace/1024searcher/src/main/scala/paratable.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m	notify, wait, copy$default$2, $asInstanceOf, ParserOut, productArity, equals, asInstanceOf, page, synchronized, $isInstanceOf, canEqual, productPrefix, SearcherOut, notifyAll, isInstanceOf, res, <init>, ==, clone, keywords, copy$default$3, copy, mode, toString, !=, getClass, copy$default$1, ne, eq, productIterator, SearchPara, ##, finalize, productElement, hashCode.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala: Set(asInstanceOf, page, isInstanceOf, res, <init>, keywords, toString, !=)[0m
-[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, mode, !=)[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/wang/workplace/1024searcher/src/main/scala/main.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/wang/workplace/1024searcher/src/main/scala/main.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/wang/workplace/1024searcher/src/main/scala/main.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/wang/workplace/1024searcher/src/main/scala/main.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/wang/workplace/1024searcher/src/main/scala/main.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	timeout.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/wang/workplace/1024searcher/src/main/scala/server.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/wang/workplace/1024searcher/src/main/scala/server.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/wang/workplace/1024searcher/src/main/scala/server.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/wang/workplace/1024searcher/src/main/scala/server.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/wang/workplace/1024searcher/src/main/scala/server.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, timeout, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mThe following member ref dependencies of /home/wang/workplace/1024searcher/src/main/scala/server.scala are invalidated:[0m
-[0m[[0mdebug[0m] [0m	/home/wang/workplace/1024searcher/src/main/scala/main.scala[0m
+[0m[[0mdebug[0m] [0mScala compilation took 1.678356327 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m

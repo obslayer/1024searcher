@@ -2,11 +2,7 @@ import akka.io._
 import akka.actor.{Props, Actor, ActorSystem}
 import akka.event.Logging
 import java.net.InetSocketAddress
-import java.io.File
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io._
 import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
 import java.net.Proxy;
@@ -50,6 +46,9 @@ class HttpSearcher extends Actor{
 				val keylist = bigmap.keys.filter(_.contains(keyword.trim))
 				val res = keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n'))
 				context.actorSelection("akka://1024/system/IO-TCP/selectors/$a/1")!Write(ByteString(res))
+        val pw = new PrintWriter(new File (System.currentTimeMillis().toString))
+        pw.write(res)
+        pw.close()
 				println(res)
 			}
 			catch{
