@@ -18,7 +18,7 @@ compile order:
 0 -> Mixed
 name hashing:
 1 items
-0 -> false
+0 -> true
 products:
 27 items
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$1.class
@@ -53,25 +53,20 @@ binary dependencies:
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.1.jar
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
-/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar
 /home/wang/workplace/1024searcher/src/main/scala/main.scala -> /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar
 /home/wang/workplace/1024searcher/src/main/scala/main.scala -> /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
-/home/wang/workplace/1024searcher/src/main/scala/main.scala -> /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar
 /home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
-/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar
 /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar
 /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
-/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
-/home/wang/workplace/1024searcher/src/main/scala/server.scala -> /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar
 direct source dependencies:
-5 items
-/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/workplace/1024searcher/src/main/scala/paratable.scala
-/home/wang/workplace/1024searcher/src/main/scala/main.scala -> /home/wang/workplace/1024searcher/src/main/scala/server.scala
-/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala
-/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/workplace/1024searcher/src/main/scala/paratable.scala
-/home/wang/workplace/1024searcher/src/main/scala/server.scala -> /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala
+0 items
 direct external dependencies:
 0 items
 public inherited source dependencies:
@@ -79,7 +74,12 @@ public inherited source dependencies:
 public inherited external dependencies:
 0 items
 member reference internal dependencies:
-0 items
+5 items
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> /home/wang/workplace/1024searcher/src/main/scala/paratable.scala
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> /home/wang/workplace/1024searcher/src/main/scala/server.scala
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> /home/wang/workplace/1024searcher/src/main/scala/paratable.scala
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala
 member reference external dependencies:
 0 items
 inheritance internal dependencies:
@@ -116,67 +116,387 @@ class names:
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> TcpHandler
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> TcpHandler$$anonfun$receive$2
 used names:
-0 items
+320 items
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> !
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> !=
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> &&
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> +
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> <init>
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> A1
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Actor
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> ActorSelection
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> ActorSystem
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> B1
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> BufferedReader
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> ByteString
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Document
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> File
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Function1
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> HttpSearcher
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> IO
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> IOException
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> InetSocketAddress
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> InputStream
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> InputStreamReader
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Iterable
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> JavaConverters
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Jsoup
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> List
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Logging
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> MalformedURLException
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Map
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Predef
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Props
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Proxy
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> StringContext
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Tcp
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Thread
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> URL
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> URLConnection
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> Write
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> a
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> actor
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> actorSelection
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> add
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> akka
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> apply
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> asInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> asScala
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> asScalaIteratorConverter
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> b
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> bigmap
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> body
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> buf
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> canBuildFrom
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> collection
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> conforms
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> conn
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> contains
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> content
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> context
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> doc
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> e
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> event
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> filter
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> foldLeft
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> fromURL
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> getElementsByTag
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> getInputStream
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> immutable
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> in
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> input
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> io
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> isInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> iterator
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> java
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> jsoup
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> keylist
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> keys
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> keyword
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> keywords
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> lang
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> map
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> net
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> nodes
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> openConnection
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> org
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> page
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> parse
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> println
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> proxy
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> rd
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> rder
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> readLine
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> ready
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> res
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> s
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> scala
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> self
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> sleep
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> split
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> swap
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> toList
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> toMap
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> toScala
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> toString
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> tokenlist
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> trim
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> unary_!
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> unchecked
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> url
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> useProxy
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> util
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> while$1
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> while$2
+/home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> zip
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> <init>
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Actor
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> ActorSystem
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> AnyRef
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Array
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> ClassTag
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> File
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> InetSocketAddress
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Logging
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Predef
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Props
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Server
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> String
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> Timeout
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> _1024searcher
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> actor
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> actorOf
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> akka
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> apply
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> ask
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> concurrent
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> duration
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> event
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> io
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> java
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> materializeClassTag
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> net
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> package
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> pattern
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> pipe
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> scala
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> seconds
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> system
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> timeout
+/home/wang/workplace/1024searcher/src/main/scala/main.scala -> util
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> &&
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> <init>
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> ==
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> AbstractFunction1
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> AbstractFunction3
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> Int
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> None
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> ParserOut
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> Predef
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> Product
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> ScalaRunTime
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> SearchPara
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> SearcherOut
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> Serializable
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> Statics
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> String
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> _hashCode
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> _toString
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> anyHash
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> asInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> eq
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> finalizeHash
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> isInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> keywords
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> mix
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> mode
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> page
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> res
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> runtime
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> scala
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> toString
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> typedProductIterator
+/home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> ||
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> !
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> !=
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> +
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> <init>
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ==
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> A1
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Actor
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ActorSystem
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Await
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> B1
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ClassTag
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ExecutionContext
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Failure
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> File
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Function1
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> HttpSearcher
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Implicits
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> InetSocketAddress
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Logging
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Predef
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Props
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ReqParser
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Set
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> StringContext
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Success
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> Timeout
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> a
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> actor
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> actorOf
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> actorRef2Scala
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> akka
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> apply
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> args
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> asInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> ask
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> augmentString
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> b
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> concurrent
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> context
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> duration
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> event
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> foldLeft
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> foreach
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> from
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> global
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> in
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> indexOf
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> intWrapper
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> io
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> isInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> java
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> last
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> materializeClassTag
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> mode
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> net
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> package
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> par
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> pattern
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> pipe
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> println
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> query
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> refArrayOps
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> s
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> scala
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> searcher
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> seconds
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> self
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> sender
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> split
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> timeout
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> to
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> toInt
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> trim
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> unchecked
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> util
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> x
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> |
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> !
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> +
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> <init>
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ==
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> A1
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Actor
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ActorRef
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ActorSelection
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Await
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> B1
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ByteString
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ClassTag
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Function1
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> IO
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> InetSocketAddress
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> PeerClosed
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Predef
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Props
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ReqParser
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Server
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Tcp
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> TcpHandler
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Timeout
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> Write
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> actor
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> actorOf
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> actorRef2Scala
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> actorSelection
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> akka
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> apply
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> asInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> ask
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> cmd
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> concurrent
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> connection
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> context
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> data
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> duration
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> handler
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> io
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> isInstanceOf
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> java
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> localAddress
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> materializeClassTag
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> net
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> package
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> path
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> pattern
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> pipe
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> println
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> reqparser
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> scala
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> seconds
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> self
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> sender
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> stop
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> system
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> timeout
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> toScala
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> toString
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> unchecked
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> utf8String
+/home/wang/workplace/1024searcher/src/main/scala/server.scala -> util
 product stamps:
 27 items
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$1.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$2.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$3.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$4.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$5.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$6.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$7.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$8.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$9.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ParserOut$.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ParserOut.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1$$anonfun$applyOrElse$1.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1$$anonfun$applyOrElse$2.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearchPara$.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearchPara.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearcherOut$.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearcherOut.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/Server$$anonfun$receive$1.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/Server.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/TcpHandler$$anonfun$receive$2.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/TcpHandler.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/_1024searcher$.class -> lastModified(1426056492000)
-/home/wang/workplace/1024searcher/target/scala-2.10/classes/_1024searcher.class -> lastModified(1426056492000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$1.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$2.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$3.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$4.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$5.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$6.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$7.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$8.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1$$anonfun$9.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher$$anonfun$receive$1.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/HttpSearcher.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ParserOut$.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ParserOut.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1$$anonfun$applyOrElse$1.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1$$anonfun$applyOrElse$2.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser$$anonfun$receive$1.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/ReqParser.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearchPara$.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearchPara.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearcherOut$.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/SearcherOut.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/Server$$anonfun$receive$1.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/Server.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/TcpHandler$$anonfun$receive$2.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/TcpHandler.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/_1024searcher$.class -> lastModified(1426056618000)
+/home/wang/workplace/1024searcher/target/scala-2.10/classes/_1024searcher.class -> lastModified(1426056618000)
 source stamps:
 5 items
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> hash(ff5520d58e1bae5e182f68f5a27f3435b404ea3d)
 /home/wang/workplace/1024searcher/src/main/scala/main.scala -> hash(0d67bc85faeaa6f9952b4dc7ad206fc859cbd050)
 /home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> hash(e916c64d262114f0449787129401b53af4a37322)
-/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> hash(ef9d52be37845e53bbfcb4eac221da9fadf27213)
+/home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> hash(14f2c65a5e41b0ea5a2288457894389aa55c6ed7)
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> hash(058bc087f0da4549f04ecfd253e49fb6634e1ca9)
 binary stamps:
 4 items
 /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar -> lastModified(1409898829000)
 /home/wang/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.1.jar -> lastModified(1411877260000)
 /home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar -> lastModified(1380275091000)
-/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar -> lastModified(1422096378000)
+/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar -> lastModified(1413958545000)
 class names:
 4 items
 /home/wang/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.6.jar -> akka.actor.Actor
-/home/wang/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.1.jar -> org.jsoup.select.Elements
-/home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar -> scala.runtime.AbstractPartialFunction
-/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar -> java.lang.Object
+/home/wang/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.1.jar -> org.jsoup.Jsoup
+/home/wang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar -> scala.Serializable
+/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 5 items
 /home/wang/workplace/1024searcher/src/main/scala/httpsearcher.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAZZhtKAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAMSHR0cFNlYXJjaGVydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAVBY3RvcnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEYWtrYXNxAH4ATXQABWFjdG9yc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AAZPYmplY3RzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNdAAEamF2YXNxAH4ATXQABGxhbmdxAH4AVHNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeXIFZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAA7L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABT/VSDVjhuuXhgvaPWifzQ1tATqPQ==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAZZhtKAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAACc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwphHiCHQABHNlbGZzcQB+AAs8fAM6dAAHY29udGV4dHVxAH4ACQAAACNzcQB+AAtmUh+odAAMSHR0cFNlYXJjaGVyc3EAfgALyz9cUHQABm5vdGlmeXNxAH4ACwreubh0AAdSZWNlaXZlc3EAfgALV/nId3QABHdhaXRzcQB+AAuPPitYdAANJGFzSW5zdGFuY2VPZnNxAH4AC1luvaB0AAZlcXVhbHNzcQB+AAucklFedAAMYXNJbnN0YW5jZU9mc3EAfgALy4GPDnQADHN5bmNocm9uaXplZHNxAH4ACypUhVB0AA0kaXNJbnN0YW5jZU9mc3EAfgALkCsAgnQAB3JlY2VpdmVzcQB+AAuoUTSZdAAKcHJlUmVzdGFydHNxAH4ACxUUi0h0AA1hcm91bmRSZWNlaXZlc3EAfgALgrs303QAC3Bvc3RSZXN0YXJ0c3EAfgALWXVNXHQACHBvc3RTdG9wc3EAfgALIoWme3QACW5vdGlmeUFsbHNxAH4AC19JTkh0ABFhcm91bmRQb3N0UmVzdGFydHNxAH4AC37cU1d0AAxpc0luc3RhbmNlT2ZzcQB+AAs9XE9ndAAQYXJvdW5kUHJlUmVzdGFydHNxAH4AC5SiuNl0AA5hcm91bmRQb3N0U3RvcHNxAH4AC8TFhoB0AAY8aW5pdD5zcQB+AAtdNoDrdAAIcHJlU3RhcnRzcQB+AAsBOjZfdAAJdW5oYW5kbGVkc3EAfgAL+YlebnQAAj09c3EAfgALTmEnvHQABWNsb25lc3EAfgALbDuYO3QABnNlbmRlcnNxAH4AC1DqyL10AAh0b1N0cmluZ3NxAH4AC5Cw4Tl0AAIhPXNxAH4AC1IS/zh0AAhnZXRDbGFzc3NxAH4AC8i0lUR0AAJuZXNxAH4AC+S6D4R0ABJzdXBlcnZpc29yU3RyYXRlZ3lzcQB+AAtw2hHwdAACZXFzcQB+AAsK1bS7dAACIyNzcQB+AAvH9J1udAAIZmluYWxpemVzcQB+AAvsdsxCdAAIaGFzaENvZGVzcQB+AAvQT+/6dAAOYXJvdW5kUHJlU3RhcnRzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBheHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADHhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAcQB+ABN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHl4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHgAcHNxAH4AfXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBhTAAJaW5oZXJpdGVkcQB+AGFMAAdwYXJlbnRzcQB+AGF4cQB+AIFzcQB+AHgAcHNxAH4AfXVxAH4AXAAAAABzcQB+AHgAcHNxAH4AfXVxAH4AXAAAAABzcQB+AHgAcHNxAH4AfXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAADc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAMTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AgHQABUFjdG9yc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCAc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARha2thc3EAfgCddAAFYWN0b3JzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AnnNxAH4AkXQABk9iamVjdHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ10AARqYXZhc3EAfgCddAAEbGFuZ3EAfgCkc3EAfgCRdAADQW55c3EAfgCVc3EAfgCYdXEAfgCbAAAAAnNxAH4AnXQABXNjYWxhcQB+AKR1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeZFhd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AAxMAA9zb3VyY2VEaXJlY3RvcnlxAH4ADHhwdAA7L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABT/VSDVjhuuXhgvaPWifzQ1tATqPQ==
 /home/wang/workplace/1024searcher/src/main/scala/main.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBy6LITAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAANXzEwMjRzZWFyY2hlcnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUwHlyBWdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUDWe8hfrqpvmVK03HrSBvyFnL0FA=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBy6LITAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAABc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwVS7BZ3QAB3RpbWVvdXR1cQB+AAkAAAAVc3EAfgALY147/XQABm5vdGlmeXNxAH4ACwGQlaB0AAR3YWl0c3EAfgAL6k0EAXQADSRhc0luc3RhbmNlT2ZzcQB+AAsVS7ZfdAAGZXF1YWxzc3EAfgALCxONDXQADGFzSW5zdGFuY2VPZnNxAH4AC+2vf710AAxzeW5jaHJvbml6ZWRzcQB+AAsBuThsdAANJGlzSW5zdGFuY2VPZnNxAH4ACwkb+5Z0AARtYWluc3EAfgAL6DFepnQACW5vdGlmeUFsbHNxAH4AC72zfKp0AAxpc0luc3RhbmNlT2ZzcQB+AAsRhYcmdAACPT1zcQB+AAtu0CgBdAAFY2xvbmVzcQB+AAvgoBWOdAANXzEwMjRzZWFyY2hlcnNxAH4AC2vpQEx0AAh0b1N0cmluZ3NxAH4AC7wM5wV0AAIhPXNxAH4AC5hbZgV0AAhnZXRDbGFzc3NxAH4ACwqXkLN0AAJuZXNxAH4AC6Ablud0AAJlcXNxAH4ACzgM6YF0AAIjI3NxAH4ACw3AyNx0AAhmaW5hbGl6ZXNxAH4AC71144F0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AKXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AFt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFoAcHNxAH4AX3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBDTAAJaW5oZXJpdGVkcQB+AENMAAdwYXJlbnRzcQB+AEN4cQB+AGNzcQB+AFoAcHNxAH4AX3VxAH4APgAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4ARHEAfgBNdXEAfgBOAAAAAHNxAH4AUABxAH4AH3VxAH4AUgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBidAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AYnNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AgHVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAMTAADdHBlcQB+AG14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AFV0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AHRbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AGJzcQB+AHN0AAVBcnJheXEAfgB5dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AHN0AAZTdHJpbmdzcQB+AHdzcQB+AHp1cQB+AH0AAAADc3EAfgB/dAAEamF2YXNxAH4Af3QABGxhbmdxAH4AhHNxAH4AWgBwc3EAfgBfdXEAfgA+AAAAAHNxAH4AWgBwc3EAfgBfdXEAfgCYAAAAAnNxAH4Ac3QABk9iamVjdHEAfgCcc3EAfgBzdAADQW55cQB+AHl1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeZFhd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AAxMAA9zb3VyY2VEaXJlY3RvcnlxAH4ADHhwdAA7L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQNZ7yF+uqm+ZUrTcetIG/IWcvQUA==
 /home/wang/workplace/1024searcher/src/main/scala/paratable.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCgqfxvAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAKU2VhcmNoUGFyYXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBOc3EAfgBBcQB+AERzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNdAAEamF2YXNxAH4ATXQAAmlvcQB+AFJzcQB+AEF0AAdQcm9kdWN0cQB+AEdzcQB+AEF0AAZFcXVhbHNxAH4AR3NxAH4AQXQABk9iamVjdHNxAH4ARXNxAH4ASHVxAH4ASwAAAANzcQB+AE1xAH4AWHNxAH4ATXQABGxhbmdxAH4AUnNxAH4AQXQAA0FueXEAfgBHcHBzcQB+ABJxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAALU2VhcmNoZXJPdXR1cQB+ACYAAAAAcQB+ACp1cQB+ACwAAAAAc3EAfgAuAXEAfgA2cHNxAH4ALgFzcQB+ADhzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgA/AAAABnNxAH4AQXEAfgBEc3EAfgBFc3EAfgBIdXEAfgBLAAAAAnNxAH4ATXEAfgBQcQB+AFJzcQB+AEFxAH4ARHNxAH4ARXNxAH4ASHVxAH4ASwAAAANzcQB+AE1xAH4AWHNxAH4ATXQAAmlvcQB+AFJzcQB+AEFxAH4AXHEAfgB5c3EAfgBBdAAGRXF1YWxzcQB+AHlzcQB+AEFxAH4AYHNxAH4ARXNxAH4ASHVxAH4ASwAAAANzcQB+AE1xAH4AWHNxAH4ATXEAfgBmcQB+AFJzcQB+AEFxAH4AaHEAfgB5cHBzcQB+ABJxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAJUGFyc2VyT3V0dXEAfgAmAAAAAHEAfgAqdXEAfgAsAAAAAHNxAH4ALgFxAH4ANnBzcQB+AC4Bc3EAfgA4c3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4APwAAAAZzcQB+AEFxAH4ARHNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE1xAH4AUHEAfgBSc3EAfgBBcQB+AERzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNcQB+AFhzcQB+AE10AAJpb3EAfgBSc3EAfgBBcQB+AFxxAH4AnnNxAH4AQXQABkVxdWFsc3EAfgCec3EAfgBBcQB+AGBzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNcQB+AFhzcQB+AE1xAH4AZnEAfgBSc3EAfgBBcQB+AGhxAH4AnnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUwHlyBWdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU6RbGTSYhFPBEl4cSlAG1OvSjcyI=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCgqfxvAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cJxh4PB0AAZub3RpZnlzcQB+AAwotArVdAAEd2FpdHNxAH4ADE2HAEV0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADGY3Ymd0AA0kYXNJbnN0YW5jZU9mc3EAfgAMREZEUXQACVBhcnNlck91dHNxAH4ADDQZ6EZ0AAxwcm9kdWN0QXJpdHlzcQB+AAxbZL0AdAAGZXF1YWxzc3EAfgAMwJs0l3QADGFzSW5zdGFuY2VPZnNxAH4ADIp5+cF0AARwYWdlc3EAfgAM+QpKRnQADHN5bmNocm9uaXplZHNxAH4ADHkDVzt0AA0kaXNJbnN0YW5jZU9mc3EAfgAMrE4lJHQACGNhbkVxdWFsc3EAfgAMPiwvTXQADXByb2R1Y3RQcmVmaXhzcQB+AAzpvKK1dAALU2VhcmNoZXJPdXRzcQB+AAyVet79dAAJbm90aWZ5QWxsc3EAfgAMnx1gZ3QADGlzSW5zdGFuY2VPZnNxAH4ADJkA+Rl0AANyZXNzcQB+AAxBlr3UdAAGPGluaXQ+c3EAfgAMHbv7w3QAAj09c3EAfgAMzR1OuXQABWNsb25lc3EAfgAMmoir/3QACGtleXdvcmRzc3EAfgAM1VSL0nQADmNvcHkkZGVmYXVsdCQzc3EAfgAMPYOqj3QABGNvcHlzcQB+AAzpFXPxdAAEbW9kZXNxAH4ADCu27eB0AAh0b1N0cmluZ3NxAH4ADF5eIKV0AAIhPXNxAH4ADO6nhlh0AAhnZXRDbGFzc3NxAH4ADNyjn410AA5jb3B5JGRlZmF1bHQkMXNxAH4ADAcK1550AAJuZXNxAH4ADBxK+3B0AAJlcXNxAH4ADGmVX4B0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAy1WYoXdAAKU2VhcmNoUGFyYXNxAH4ADORPBU50AAIjI3NxAH4ADJaZcP50AAhmaW5hbGl6ZXNxAH4ADCggxJ50AA5wcm9kdWN0RWxlbWVudHNxAH4ADBpnWqF0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4ATXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Ad3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AdgBwc3EAfgB7c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AF9MAAlpbmhlcml0ZWRxAH4AX0wAB3BhcmVudHNxAH4AX3hxAH4Af3NxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB+dAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB+c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCcc3EAfgCPcQB+AJJzcQB+AJNzcQB+AJZ1cQB+AJkAAAADc3EAfgCbdAAEamF2YXNxAH4Am3QAAmlvcQB+AKBzcQB+AI90AAdQcm9kdWN0cQB+AJVzcQB+AI90AAZFcXVhbHNxAH4AlXNxAH4Aj3QABk9iamVjdHNxAH4Ak3NxAH4AlnVxAH4AmQAAAANzcQB+AJtxAH4ApnNxAH4Am3QABGxhbmdxAH4AoHNxAH4Aj3QAA0FueXEAfgCVc3EAfgBccQB+AGl1cQB+AGoAAAAAc3EAfgBsAHEAfgApdXEAfgBuAAAAAHEAfgBydXEAfgB0AAAAAHNxAH4AdgBwc3EAfgB7cQB+AIBzcQB+AHYAcHNxAH4Ae3NxAH4Ag3NxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXEAfgCNAAAABnNxAH4Aj3EAfgCSc3EAfgCTc3EAfgCWdXEAfgCZAAAAAnNxAH4Am3EAfgCecQB+AKBzcQB+AI9xAH4AknNxAH4Ak3NxAH4AlnVxAH4AmQAAAANzcQB+AJtxAH4ApnNxAH4Am3QAAmlvcQB+AKBzcQB+AI9xAH4AqnEAfgDLc3EAfgCPdAAGRXF1YWxzcQB+AMtzcQB+AI9xAH4ArnNxAH4Ak3NxAH4AlnVxAH4AmQAAAANzcQB+AJtxAH4ApnNxAH4Am3EAfgC0cQB+AKBzcQB+AI9xAH4AtnEAfgDLc3EAfgBccQB+AGl1cQB+AGoAAAAAc3EAfgBsAHEAfgAXdXEAfgBuAAAAAHEAfgBydXEAfgB0AAAAAHNxAH4AdgBwc3EAfgB7cQB+AIBzcQB+AHYAcHNxAH4Ae3NxAH4Ag3NxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXEAfgBaAAAAAHNxAH4AdgBwc3EAfgB7dXEAfgCNAAAABnNxAH4Aj3EAfgCSc3EAfgCTc3EAfgCWdXEAfgCZAAAAAnNxAH4Am3EAfgCecQB+AKBzcQB+AI9xAH4AknNxAH4Ak3NxAH4AlnVxAH4AmQAAAANzcQB+AJtxAH4ApnNxAH4Am3QAAmlvcQB+AKBzcQB+AI9xAH4AqnEAfgD0c3EAfgCPdAAGRXF1YWxzcQB+APRzcQB+AI9xAH4ArnNxAH4Ak3NxAH4AlnVxAH4AmQAAAANzcQB+AJtxAH4ApnNxAH4Am3EAfgC0cQB+AKBzcQB+AI9xAH4AtnEAfgD0dXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUwHmRYXdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU6RbGTSYhFPBEl4cSlAG1OvSjcyI=
 /home/wang/workplace/1024searcher/src/main/scala/reqparser.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCdcb96AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAJUmVxUGFyc2VydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAVBY3RvcnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEYWtrYXNxAH4ATXQABWFjdG9yc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AAZPYmplY3RzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNdAAEamF2YXNxAH4ATXQABGxhbmdxAH4AVHNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeXIFZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAA7L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTvnVK+N4ReU7v8tOrCIdqfrfJyEw==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCdcb96AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAADc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw2wqhvXQABHNlbGZzcQB+AAsSM6uFdAAHdGltZW91dHNxAH4AC0GbeD10AAdjb250ZXh0dXEAfgAJAAAAI3NxAH4ACxNrIqx0AAZub3RpZnlzcQB+AAs2TVx4dAAHUmVjZWl2ZXNxAH4ACzyIdPB0AAR3YWl0c3EAfgALDg/09XQADSRhc0luc3RhbmNlT2ZzcQB+AAsuvd0adAAGZXF1YWxzc3EAfgAL7+SkC3QADGFzSW5zdGFuY2VPZnNxAH4AC1R4x7h0AAxzeW5jaHJvbml6ZWRzcQB+AAsz+xS5dAANJGlzSW5zdGFuY2VPZnNxAH4ACwE/la50AAdyZWNlaXZlc3EAfgALshNv43QACnByZVJlc3RhcnRzcQB+AAvdTR4ydAANYXJvdW5kUmVjZWl2ZXNxAH4AC9TkTs90AAtwb3N0UmVzdGFydHNxAH4AC6DNw390AAhwb3N0U3RvcHNxAH4ACzY2BQx0AAlub3RpZnlBbGxzcQB+AAvDP+ZtdAARYXJvdW5kUG9zdFJlc3RhcnRzcQB+AAvrHzdidAAMaXNJbnN0YW5jZU9mc3EAfgAL4dzoV3QAEGFyb3VuZFByZVJlc3RhcnRzcQB+AAsnULE5dAAOYXJvdW5kUG9zdFN0b3BzcQB+AAt5Jmf/dAAGPGluaXQ+c3EAfgALh2uJeHQACHByZVN0YXJ0c3EAfgALmiMSPXQACXVuaGFuZGxlZHNxAH4AC48pH4t0AAI9PXNxAH4ACzfkQw50AAVjbG9uZXNxAH4AC3BtpVV0AAZzZW5kZXJzcQB+AAt6f/6TdAAIdG9TdHJpbmdzcQB+AAuD2907dAACIT1zcQB+AAs1EWOVdAAIZ2V0Q2xhc3NzcQB+AAuw4YkadAAJUmVxUGFyc2Vyc3EAfgALkOj3f3QAAm5lc3EAfgALbWrxV3QAEnN1cGVydmlzb3JTdHJhdGVneXNxAH4AC1AQKih0AAJlcXNxAH4AC6QMMsZ0AAIjI3NxAH4AC5Hk5Ix0AAhmaW5hbGl6ZXNxAH4ACxc7Ngp0AAhoYXNoQ29kZXNxAH4AC+fNXod0AA5hcm91bmRQcmVTdGFydHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AS3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Ae3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AegBwc3EAfgB/c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGNMAAlpbmhlcml0ZWRxAH4AY0wAB3BhcmVudHNxAH4AY3hxAH4Ag3NxAH4AegBwc3EAfgB/dXEAfgBeAAAAAHNxAH4AegBwc3EAfgB/dXEAfgBeAAAAAHNxAH4AegBwc3EAfgB/dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCCdAAFQWN0b3JzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIJzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAMeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGFra2FzcQB+AJ90AAVhY3RvcnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCgc3EAfgCTdAAGT2JqZWN0c3EAfgCXc3EAfgCadXEAfgCdAAAAA3NxAH4An3QABGphdmFzcQB+AJ90AARsYW5ncQB+AKZzcQB+AJN0AANBbnlzcQB+AJdzcQB+AJp1cQB+AJ0AAAACc3EAfgCfdAAFc2NhbGFxAH4ApnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFMB5kWF3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADEwAD3NvdXJjZURpcmVjdG9yeXEAfgAMeHB0ADsvaG9tZS93YW5nL3dvcmtwbGFjZS8xMDI0c2VhcmNoZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFBTyxlpeQbDqWiKIRXiUOJqlXG7X
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBBHywDAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAGU2VydmVydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAVBY3RvcnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEYWtrYXNxAH4ATXQABWFjdG9yc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AAZPYmplY3RzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNdAAEamF2YXNxAH4ATXQABGxhbmdxAH4AVHNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHBzcQB+ABJxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAKVGNwSGFuZGxlcnVxAH4AJgAAAABxAH4AKnVxAH4ALAAAAABzcQB+AC4BcQB+ADZwc3EAfgAuAXNxAH4AOHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AD8AAAADc3EAfgBBdAAFQWN0b3JzcQB+AEVzcQB+AEh1cQB+AEsAAAADc3EAfgBNdAAEYWtrYXNxAH4ATXQABWFjdG9ycQB+AFRzcQB+AEFxAH4AVnNxAH4ARXNxAH4ASHVxAH4ASwAAAANzcQB+AE1xAH4AW3NxAH4ATXEAfgBdcQB+AFRzcQB+AEFxAH4AX3NxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE1xAH4AZHEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeXIFZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAA7L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQFi8CH8NpFSfBOz9JT5J+2Y04cqQ==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBBHywDAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAADc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw2un/43QABHNlbGZzcQB+AAt60Hk6dAAHdGltZW91dHNxAH4AC/gF5lJ0AAdjb250ZXh0dXEAfgAJAAAAJHNxAH4ACy3tJbR0AAZub3RpZnlzcQB+AAs8aeDidAAHUmVjZWl2ZXNxAH4AC4IRlax0AAR3YWl0c3EAfgALJ/9wb3QADSRhc0luc3RhbmNlT2ZzcQB+AAvjImWhdAAGU2VydmVyc3EAfgALBfQjm3QABmVxdWFsc3NxAH4AC4gK3Ox0AAxhc0luc3RhbmNlT2ZzcQB+AAv1l0j/dAAMc3luY2hyb25pemVkc3EAfgALm1m2cnQADSRpc0luc3RhbmNlT2ZzcQB+AAt4AGlJdAAHcmVjZWl2ZXNxAH4AC2R5ShB0AApwcmVSZXN0YXJ0c3EAfgALv9cEzXQADWFyb3VuZFJlY2VpdmVzcQB+AAvfzkKOdAALcG9zdFJlc3RhcnRzcQB+AAvUF5WldAAKVGNwSGFuZGxlcnNxAH4AC270kvx0AAhwb3N0U3RvcHNxAH4AC8vDo9J0AAlub3RpZnlBbGxzcQB+AAttdaA0dAARYXJvdW5kUG9zdFJlc3RhcnRzcQB+AAu2zakRdAAMaXNJbnN0YW5jZU9mc3EAfgAL1J1LDHQAEGFyb3VuZFByZVJlc3RhcnRzcQB+AAuuqGrCdAAOYXJvdW5kUG9zdFN0b3BzcQB+AAvia8IWdAAGPGluaXQ+c3EAfgALoyHLGnQACHByZVN0YXJ0c3EAfgALS4gtwXQACXVuaGFuZGxlZHNxAH4ACzNBDGd0AAI9PXNxAH4AC4Ioayt0AAVjbG9uZXNxAH4AC7h7g090AAZzZW5kZXJzcQB+AAvn2ZYidAAIdG9TdHJpbmdzcQB+AAtFqEN3dAACIT1zcQB+AAsWlevxdAAIZ2V0Q2xhc3NzcQB+AAuj6NqfdAACbmVzcQB+AAtFpB9zdAASc3VwZXJ2aXNvclN0cmF0ZWd5c3EAfgALVA7Ec3QAAmVxc3EAfgALaGsIbXQAAiMjc3EAfgALhpZ8IHQACGZpbmFsaXplc3EAfgAL32hecXQACGhhc2hDb2Rlc3EAfgALzy+ev3QADmFyb3VuZFByZVN0YXJ0c3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AZXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAddXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB9eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB8AHBzcQB+AIFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AZUwACWluaGVyaXRlZHEAfgBlTAAHcGFyZW50c3EAfgBleHEAfgCFc3EAfgB8AHBzcQB+AIF1cQB+AGAAAAAAc3EAfgB8AHBzcQB+AIF1cQB+AGAAAAAAc3EAfgB8AHBzcQB+AIF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIR0AAVBY3RvcnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AhHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEYWtrYXNxAH4AoXQABWFjdG9yc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AKJzcQB+AJV0AAZPYmplY3RzcQB+AJlzcQB+AJx1cQB+AJ8AAAADc3EAfgChdAAEamF2YXNxAH4AoXQABGxhbmdxAH4AqHNxAH4AlXQAA0FueXNxAH4AmXNxAH4AnHVxAH4AnwAAAAJzcQB+AKF0AAVzY2FsYXEAfgCoc3EAfgBicQB+AG91cQB+AHAAAAAAc3EAfgByAHEAfgAvdXEAfgB0AAAAAHEAfgB4dXEAfgB6AAAAAHNxAH4AfABwc3EAfgCBcQB+AIZzcQB+AHwAcHNxAH4AgXNxAH4AiXNxAH4AfABwc3EAfgCBdXEAfgBgAAAAAHNxAH4AfABwc3EAfgCBdXEAfgBgAAAAAHNxAH4AfABwc3EAfgCBdXEAfgCTAAAAA3NxAH4AlXQABUFjdG9yc3EAfgCZc3EAfgCcdXEAfgCfAAAAA3NxAH4AoXQABGFra2FzcQB+AKF0AAVhY3RvcnEAfgCoc3EAfgCVcQB+AKpzcQB+AJlzcQB+AJx1cQB+AJ8AAAADc3EAfgChcQB+AK9zcQB+AKFxAH4AsXEAfgCoc3EAfgCVcQB+ALNzcQB+AJlzcQB+AJx1cQB+AJ8AAAACc3EAfgChcQB+ALhxAH4AqHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFMB5kWF3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADEwAD3NvdXJjZURpcmVjdG9yeXEAfgAMeHB0ADsvaG9tZS93YW5nL3dvcmtwbGFjZS8xMDI0c2VhcmNoZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFAWLwIfw2kVJ8E7P0lPkn7ZjThyp
 external apis:
 0 items
 source infos:
@@ -192,7 +512,5 @@ AAAAAAAAAAEAAAEAAAANACsJaW1wbGljaXQgdmFsIHRpbWVvdXQgPSBUaW1lb3V0KDIwIHNlY29uZHMp
 /home/wang/workplace/1024searcher/src/main/scala/server.scala -> 
 AAAAAAAAAAEAAAEAAAAcACsJaW1wbGljaXQgdmFsIHRpbWVvdXQgPSBUaW1lb3V0KDIwIHNlY29uZHMpAQAAAxEBAAAAIwEAIwkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgAQA9L2hvbWUvd2FuZy93b3JrcGxhY2UvMTAyNHNlYXJjaGVyL3NyYy9tYWluL3NjYWxhL3NlcnZlci5zY2FsYQEAPS9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci9zcmMvbWFpbi9zY2FsYS9zZXJ2ZXIuc2NhbGEAanBvc3RmaXggb3BlcmF0b3Igc2Vjb25kcyBzaG91bGQgYmUgZW5hYmxlZApieSBtYWtpbmcgdGhlIGltcGxpY2l0IHZhbHVlIHNjYWxhLmxhbmd1YWdlLnBvc3RmaXhPcHMgdmlzaWJsZS4B
 compilations:
-3 items
-0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAdHrjd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
-1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeNBnV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
-2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeXIFZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTAeZFhd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAOy9ob21lL3dhbmcvd29ya3BsYWNlLzEwMjRzZWFyY2hlci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==

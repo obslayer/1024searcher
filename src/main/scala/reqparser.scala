@@ -31,7 +31,7 @@ class ReqParser extends Actor{
 					val searcher = context.actorOf(Props[HttpSearcher],s"searcher${in}")
 					searcher!(SearchPara(mode, in,query))
 				})
-u		}
+		}
 			else{
 				sender()!(s"${a.trim} does not contain a valid command\n")
 			}
