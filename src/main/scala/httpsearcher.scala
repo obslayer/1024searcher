@@ -44,18 +44,13 @@ class HttpSearcher extends Actor{
 						content=content+buf
 					}
 					doc = Jsoup.parse(content)
-					//print(doc)
 				}
 				val tokenlist=doc.body.getElementsByTag("a").iterator.asScala.toList.map(_.toString).filter(in => in.contains("htm_data") && (!in.contains("title"))).map(_.split("\""))
 				val bigmap = tokenlist.map(_(1)).zip(tokenlist.map(_(6))).toMap.map(_.swap)
 				val keylist = bigmap.keys.filter(_.contains(keyword.trim))
-				//println(keylist.last)
-				//sender!(keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
 				val res = keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n'))
 				context.actorSelection("akka://1024/system/IO-TCP/selectors/$a/1")!Write(ByteString(res))
 				println(res)
-//				println("FROMHTTPSEARCHER")
-//				println(keylist.map(bigmap(_)).toString)
 			}
 			catch{
 				case e:IOException => println(e)

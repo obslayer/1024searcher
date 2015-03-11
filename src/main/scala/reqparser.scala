@@ -27,16 +27,11 @@ class ReqParser extends Actor{
 				//val searcher = context.actorOf(Props[HttpSearcher],"searcher")
 				val query = args.last
 				val x = from to to
-			/*	val searchers = x.map(in => context.actorOf(Props[HttpSearcher],s"searcher${in}"))
-				val paras = x.map(SearchPara(mode, _, query))
-				val res = searchers.zip(paras).par.map(	in =>Await.result(in._1?(in._2), 20 seconds).asInstanceOf[String] ).reduce(_+_)	*/
 				x.par.foreach({in=>
 					val searcher = context.actorOf(Props[HttpSearcher],s"searcher${in}")
 					searcher!(SearchPara(mode, in,query))
 				})
-				//val rez = (from to to).map(SearchPara(mode,_,query)).par.map(in => Await.result(searcher?(in), 20 seconds).asInstanceOf[String]).reduce(_+_)
-				//sender()!res
-			}
+u		}
 			else{
 				sender()!(s"${a.trim} does not contain a valid command\n")
 			}
