@@ -23,11 +23,11 @@ class HttpSearcher extends Actor{
 		case SearchPara(mode, page, keyword)=>{
 			try{
 				val fromURL= true
-				val useProxy =true
+				val useProxy = false
 				var doc:Document= new Document("")
 				if (!fromURL){doc = Jsoup.parse(new File("/home/wang/workplace/1024searcher/page.html"), "UTF-8")}
 				if(fromURL){
-					val url:URL = new URL("http://c1521.biz.tm/thread0806.php?fid=2&search=&page=${page}")
+					val url:URL = new URL(s"http://c1521.biz.tm/thread0806.php?fid=2&search=&page=${page}")
 					println(s"searching http://c1521.biz.tm/thread0806.php?fid=2&search=&page=${page}")
 					val add:InetSocketAddress = new InetSocketAddress("127.0.0.1", 1080)
 					val proxy:Proxy = new Proxy(Proxy.Type.SOCKS, add)
@@ -46,12 +46,12 @@ class HttpSearcher extends Actor{
 					doc = Jsoup.parse(content)
 					//print(doc)
 				}
-				val tokenlist=doc.body.getElementsByTag("a").iterator.asScala.toList.map(_.toString).filter(in => (in.contains("htm_data") && (!in.contains("title")))).map(_.split("\""))
+				val tokenlist=doc.body.getElementsByTag("a").iterator.asScala.toList.map(_.toString).filter(in => in.contains("htm_data") && (!in.contains("title"))).map(_.split("\""))
 				val bigmap = tokenlist.map(_(1)).zip(tokenlist.map(_(6))).toMap.map(_.swap)
 				val keylist = bigmap.keys.filter(_.contains(keyword.trim))
 				//println(keylist.last)
 				//sender!(keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
-				val res = (keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n')))
+				val res = keylist.map(bigmap(_)).foldLeft("")((a,b) => a+("http://c1521.biz.tm/"+b+'\n'))
 				context.actorSelection("akka://1024/system/IO-TCP/selectors/$a/1")!Write(ByteString(res))
 				println(res)
 //				println("FROMHTTPSEARCHER")
